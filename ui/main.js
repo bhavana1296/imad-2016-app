@@ -16,7 +16,7 @@ button.onclick = function(){
         }
     }
     
-    request.open('GET','https://bhavana1296.imad.hasura.io/counter',true);
+    request.open('GET','/counter',true);
     request.send(null);
 
 };
