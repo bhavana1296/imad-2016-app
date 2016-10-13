@@ -5,12 +5,13 @@ element.innerHTML='Bhavana';
 //move image
 var image=document.getElementById('img');
 var move=0;
-function MoveLeft(){
-    move=move+5;
-    img.style.marginLeft=move+'px';
-    if(move>=50)
-        move=0;
+function MoveRight(){
+    if(move<=50)
+    {
+        move=move+5;
+        img.style.marginLeft=move+'px';
+    }
 }
 img.onclick=function(){
-    var interval = setInterval(MoveLeft,50);
+    var interval = setInterval(MoveRight,50);
 };
