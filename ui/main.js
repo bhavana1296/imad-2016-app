@@ -24,5 +24,5 @@ function MoveUp(){
 
 img.onclick=function(){
     var interval = setInterval(MoveLeft,50);
-    var int2= setInterval(MoveUp,50);
+    var int2= setInterval(MoveUp,25);
 };
