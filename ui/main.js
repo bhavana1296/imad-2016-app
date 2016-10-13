@@ -15,7 +15,7 @@ function MoveLeft(){
 
 var moveU=0;
 function MoveUp(){
-    if(move<=100)
+    if(move<=175)
     {
         moveU=moveU+5;
         heading.style.marginTop=(-move)+'px';
@@ -23,6 +23,6 @@ function MoveUp(){
 }
 
 img.onclick=function(){
-    var interval = setInterval(MoveLeft,50);
+    var interval = setInterval(MoveLeft,70);
     var int2= setInterval(MoveUp,25);
 };
