@@ -5,6 +5,9 @@ button.onclick = function(){
     
     var request = new XMLHttpRequest();
     
+    request.open('GET','/counter',true);
+    request.send(null);
+
     request.onreadystatechange=function(){
         if(request.readystate==XMLHttpRequest.DONE){
             console.log("Inside DONE");
@@ -19,8 +22,6 @@ button.onclick = function(){
         }
     }
     
-    request.open('GET','/counter',true);
-    request.send(null);
-
+    
 };
 
