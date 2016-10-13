@@ -6,7 +6,7 @@ element.innerHTML='Bhavana';
 var image=document.getElementById('img');
 var move=0;
 function MoveLeft(){
-    if(move<=400)
+    if(move<=500)
     {
         move=move+5;
         img.style.marginRight=move+'px';
