@@ -7,9 +7,9 @@ app.use(morgan('combined'));
 
 var articles=
 {
-    'article-one':{Title:'Article One|Bhavana', Heading:'Article-one',Content:'This is article one'},
-    'article-two':{Title:'Article Two|Bhavana', Heading:'Article-two',Content:'This is article two'},
-    'article-three':{Title:'Article Three|Bhavana', Heading:'Article-three',Content:'This is article three'},
+    'article-one':{Title:'Article One|Bhavana', Heading:'Article-one',Content:'This is article one. This is article one. This is article one. This is article one. This is article one. This is article one. '},
+    'article-two':{Title:'Article Two|Bhavana', Heading:'Article-two',Content:'This is article two. This is article two. This is article two. This is article two. This is article two. This is article two. '},
+    'article-three':{Title:'Article Three|Bhavana', Heading:'Article-three',Content:'This is article three. This is article three. This is article three. This is article three. This is article three. This is article three. '},
 };
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
@@ -37,7 +37,7 @@ function createTemplate(data){
         <body>
             <div class="container">
                 <h1>${Heading}</h1>
-                </hr>
+                <hr>
                 <p>${Content}</p>
             </div>
         </body>
