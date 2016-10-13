@@ -1,28 +1,10 @@
-console.log('Loaded!');
-//change value
-var element= document.getElementById('heading');
-element.innerHTML='Bhavana';
-//move image
-var image=document.getElementById('img');
-var move=0;
-function MoveLeft(){
-    if(move<=500)
-    {
-        move=move+5;
-        img.style.marginRight=move+'px';
-    }
-}
+var button = document.getElementById('counter');
+var counter = 0;
 
-var moveU=0;
-function MoveUp(){
-    if(move<=175)
-    {
-        moveU=moveU+5;
-        heading.style.marginTop=(-move)+'px';
-    }
-}
-
-img.onclick=function(){
-    var interval = setInterval(MoveLeft,40);
-    var int2= setInterval(MoveUp,25);
+button.onclick = function(){
+    
+    counter=counter+1;
+    var span = document.getElementById('count');
+    span.innerHTML=counter.toString();
+    
 };
