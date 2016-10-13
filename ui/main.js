@@ -7,7 +7,7 @@ var image=document.getElementById('img');
 var move=0;
 function MoveLeft(){
     move=move+5;
-    img.style.marginLeft=move;
+    img.style.marginLeft=move+'px';
 }
 img.onclick=function(){
     var interval = setInterval(MoveLeft,50);
