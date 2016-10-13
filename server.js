@@ -33,6 +33,7 @@ function createTemplate(data){
         <head>
             <title>${Title}</title>
             <link href="/ui/style.css" rel="stylesheet"/>
+            <meta name="viewport" content="width=device-width scale=1"/>
         </head>
         <body>
             <div class="container">
