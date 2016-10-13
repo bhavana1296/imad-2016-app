@@ -23,6 +23,6 @@ function MoveUp(){
 }
 
 img.onclick=function(){
-    var interval = setInterval(MoveLeft,70);
+    var interval = setInterval(MoveLeft,40);
     var int2= setInterval(MoveUp,25);
 };
